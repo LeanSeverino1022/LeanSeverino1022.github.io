@@ -15,7 +15,7 @@ GREY ON LIGHT: #616362
 
 html, body{
     font-size: 100%;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Segoe UI', sans-serif;
 	background:#ffffff;
 	margin: 0;
     color: #333;
@@ -28,7 +28,7 @@ p,ul li,ol li{
 	letter-spacing: 1px;
 }
 h1,h2,h3,h4,h5,h6{
-	font: normal normal 2.125em/1.33em Novecento_wide_bold;
+	font: normal normal 2.125em/1.33em 'Segoe UI';
 	text-transform:uppercase;
 	margin:0;
 }
@@ -73,6 +73,9 @@ border-top: 1px solid #F0EEEE;
 	width: 60%;
     font-size: 1.3em;
     letter-spacing: 4px;
+    
+    animation-delay: 3s;
+    animation-duration: 4s;
 }
 
 .banner span {
@@ -101,7 +104,7 @@ border-top: 1px solid #F0EEEE;
 	margin: 0;
     padding-bottom: 11px;
     /*color: #fff;*/
-    font: normal normal 2.125em/1.33em Novecento_wide_bold;  
+    font: normal normal 2.125em/1.33em 'Segoe UI';  
 	/*max-width: 296px;*/
 }
 #about .about_me_text h1 { color: #000}
@@ -223,7 +226,7 @@ border-top: 1px solid #F0EEEE;
 }
 
 .dev_icon svg { width: 70%; position: relative; } /*for positioning check inline styles*/
-.dev_icon path {fill: #333;}
+.dev_icon path {fill: #fff;}
 
 
 svg:not(:last-child) {
@@ -244,8 +247,14 @@ svg:not(:last-child) {
     background: #EDEDED;
 }
 
+#exp h3 { margin-bottom: 30px; font-size: 36px;}
+
+.exp_box {
+    padding: 0;
+}
+
 .exp_card {
-    
+    visibility: hidden;
     margin: 1em 5px;
     border: 1px solid #ddd;
     border-left: none;
@@ -255,7 +264,7 @@ svg:not(:last-child) {
 /*    box-shadow: 0 0 5px rgba(6,8,8,0.25);*/
      box-shadow: 1px 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    background: #fff
+    background: #fff; 
 }
 
 #exp h3 { text-align: center;}
@@ -280,12 +289,13 @@ svg:not(:last-child) {
      text-transform: uppercase;
     text-align: center;
 /*    border: blue 1px solid;*/
-   font: normal normal 2.125em/1.33em Novecento_wide_bold;
+   font: normal normal 2.125em/1.33em 'Segoe UI';
+    margin-bottom: 10px;
     
 }
 
 .exp_job_year_info strong {
-    font: normal normal 2.125em/1.33em Novecento_wide_bold;
+    font: normal normal 2.125em/1.33em 'Segoe UI';
     text-transform: uppercase;
     margin: 0;
     color: green;   
@@ -300,8 +310,13 @@ svg:not(:last-child) {
 }
 
 .exp_job_enum {
-    float: right;
+/*    float: right;*/
+/*    text-align: center;*/
+}
+
+.exp_job_enum h4{
     text-align: center;
+    font-size: 24px;
 }
 
 
@@ -312,7 +327,7 @@ svg:not(:last-child) {
 /*    text-align: left;*/
 }
 
-.exp_job_enum.csr h5 {
+.exp_job_enum.csr h4 {
     font-size: 25px;
 }
 
@@ -321,6 +336,8 @@ svg:not(:last-child) {
     line-height: 1.9em;
     color: #777;
     margin-top: 10px;
+/*    border: red 2px solid;*/
+    text-align: center;
 }
 
 
@@ -329,6 +346,7 @@ svg:not(:last-child) {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,.5);
     transition: 0.3s;
     margin-bottom: 30px;
+    visibility: hidden;
 }
 
 .github-card:hover {
@@ -417,7 +435,8 @@ footer h4 {
 /*    font-family: 'Open Sans', sans-serif;*/
     font-size: 18px;
     padding: 5px;
-     color: yellow;
+     color: #F1CC15;
+    
 }
 
 footer li, footer li a { color: #fff; }
@@ -456,28 +475,39 @@ footer li, footer li a { color: #fff; }
 	outline:none;
 }
 
-@media (min-width: 750px) {
-    #dev_icons { 
-        display: -webkit-flex; /* Safari */
+@media (min-width: 550px) {
+    #dev_icons {
+        display: -webkit-flex;
+        /* Safari */
         display: flex;
-          -webkit-flex-direction: row; /* Safari */
-          flex-direction: row;
-         -webkit-flex-wrap: wrap; /* Safari */
-  flex-wrap:         wrap;
-        -webkit-justify-content: space-around; /* Safari */
-  justify-content:         space-around;
-        -webkit-align-items: center; /* Safari */
-  align-items:         center;
-          -webkit-align-content: stretch; /* Safari */
-  align-content:         stretch;
+        -webkit-flex-direction: row;
+        /* Safari */
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        /* Safari */
+        flex-wrap: wrap;
+        -webkit-justify-content: space-around;
+        /* Safari */
+        justify-content: space-around;
+        -webkit-align-items: center;
+        /* Safari */
+        align-items: center;
+        -webkit-align-content: stretch;
+        /* Safari */
+        align-content: stretch;
     }
     
     .dev_icon {
-        -webkit-flex-basis: 5%; /* Safari */
-  flex-basis:         7%;
+        -webkit-flex-basis: 5%;
+        /* Safari */
+        flex-basis: 7%;
     }
     
-    #dev_text { display: none;}
+    #dev_text {
+        display: none;
+    }
+    
+    .exp_job_enum p { text-align: left; }
 }
 
 
