@@ -72,13 +72,8 @@ border-top: 1px solid #F0EEEE;
 
 	width: 60%;
     font-size: 1.3em;
-    letter-spacing: 4px;
-    
-    -webkit-animation-delay: 3s;
-    
-            animation-delay: 3s;
-    -webkit-animation-duration: 4s;
-            animation-duration: 4s;
+    letter-spacing: 4px;  
+
 }
 
 .banner span {
@@ -337,10 +332,8 @@ svg:not(:last-child) {
 
 .exp_job_enum p {
     font-size: 0.9em;
-    line-height: 1.9em;
-    color: #777;
+    line-height: 1.9em;    
     margin-top: 10px;
-/*    border: red 2px solid;*/
     text-align: center;
 }
 
@@ -516,7 +509,10 @@ footer li, footer li a { color: #fff; }
         display: none;
     }
     
+    .exp_card { padding: 5% 7%;}
+
     .exp_job_enum p { text-align: left; }
+
 }
 
 
