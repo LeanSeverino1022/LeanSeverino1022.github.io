@@ -15,7 +15,7 @@ GREY ON LIGHT: #616362
 
 html, body{
     font-size: 100%;
-	font-family: 'Segoe UI', sans-serif;
+	font-family: 'Lato', sans-serif;
 	background:#ffffff;
 	margin: 0;
     color: #333;
@@ -28,7 +28,7 @@ p,ul li,ol li{
 	letter-spacing: 1px;
 }
 h1,h2,h3,h4,h5,h6{
-	font: normal normal 2.125em/1.33em 'Segoe UI';
+	font: normal normal 2.125em/1.33em 'Lato';
 	text-transform:uppercase;
 	margin:0;
 }
@@ -102,7 +102,7 @@ border-top: 1px solid #F0EEEE;
 	margin: 0;
     padding-bottom: 11px;
     /*color: #fff;*/
-    font: normal normal 2.125em/1.33em 'Segoe UI';  
+    font: normal normal 2.125em/1.33em 'Lato';  
 	/*max-width: 296px;*/
 }
 #about .about_me_text h1 { color: #000}
@@ -288,13 +288,13 @@ svg:not(:last-child) {
      text-transform: uppercase;
     text-align: center;
 /*    border: blue 1px solid;*/
-   font: normal normal 2.125em/1.33em 'Segoe UI';
+   /*font: normal normal 2.125em/1.33em 'Lato';*/
     margin-bottom: 10px;
     
 }
 
 .exp_job_year_info strong {
-    font: normal normal 2.125em/1.33em 'Segoe UI';
+    /*font: normal normal 2.125em/1.33em 'Lato';*/
     text-transform: uppercase;
     margin: 0;
     color: green;   
