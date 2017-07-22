@@ -91,8 +91,10 @@ $(document).ready(function () {
 
 
 
-    /*ANIMATE EXP_CARDS WHEN IN VIEWPORT*/
+    
     $(window).scroll(function () {
+        /*ANIMATE EXP_CARDS WHEN IN VIEWPORT*/
+
         let wS = $(window).scrollTop(),
             wH = $(window).height();
         //                    
@@ -108,6 +110,24 @@ $(document).ready(function () {
             }
 
         });
+
+        /*STICKY NAV EFFECT*/
+        var  mn = $(".main_nav_container");
+        var  mns = "main-nav-scrolled";
+        var  hdr = $('header').height();
+        
+        console.log("top:",$(this).scrollTop());
+        $(window).scroll(function() {
+            if( $(this).scrollTop() > hdr ) {
+                mn.addClass(mns);
+                console.log("oh");
+                // alert("dfdf");
+            } else {
+                mn.removeClass(mns);
+            }
+        });
+
+
 
     });
 

@@ -1,0 +1,29 @@
+body { padding-top: 150px;}
+
+header {
+    height: 150px;
+    /*visibility: hidden;*/
+ }
+
+ .main_nav_container,
+.main {
+  position: relative; 
+}
+
+ .main_nav_container {
+    /*border: red 2px solid;*/
+    z-index: 150;
+}
+
+
+header, .main-nav-scrolled  {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.main-nav-scrolled {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/*check out stickyheder.js*/
