@@ -120,10 +120,11 @@ $(document).ready(function () {
         $(window).scroll(function() {
             if( $(this).scrollTop() > hdr ) {
                 mn.addClass(mns);
-                console.log("oh");
-                // alert("dfdf");
+                $('body').addClass('pt-180');
+          
             } else {
                 mn.removeClass(mns);
+                $('body').removeClass('pt-180');
             }
         });
 

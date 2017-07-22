@@ -1,4 +1,4 @@
-body { padding-top: 150px;}
+body { padding-top: 150px; border: 2px solid green; z-index: 199}
 
 header {
     height: 150px;
@@ -20,10 +20,14 @@ header, .main-nav-scrolled  {
   position: fixed;
   width: 100%;
   top: 0;
+/*    visibility: hidden;*/
 }
 
 .main-nav-scrolled {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
+.pt-180 {
+    padding-top: 180px;
+}
 /*check out stickyheder.js*/
