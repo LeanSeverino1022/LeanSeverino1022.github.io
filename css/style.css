@@ -74,8 +74,11 @@ border-top: 1px solid #F0EEEE;
     font-size: 1.3em;
     letter-spacing: 4px;
     
-    animation-delay: 3s;
-    animation-duration: 4s;
+    -webkit-animation-delay: 3s;
+    
+            animation-delay: 3s;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
 }
 
 .banner span {
@@ -263,6 +266,7 @@ svg:not(:last-child) {
     padding: 1em 10px;
 /*    box-shadow: 0 0 5px rgba(6,8,8,0.25);*/
      box-shadow: 1px 4px 8px 0 rgba(0,0,0,0.2);
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     background: #fff; 
 }
@@ -344,6 +348,7 @@ svg:not(:last-child) {
 /*PORTFOLIO SECTION STYLES*/
 .github-card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,.5);
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     margin-bottom: 30px;
     visibility: hidden;
@@ -389,9 +394,10 @@ svg:not(:last-child) {
   border-bottom: 1px solid #FFF;
   border-top: 1px solid #FFF;
   -webkit-transition: opacity 0.35s, -webkit-transform .7s;
+  transition: opacity 0.35s, -webkit-transform .7s;
   transition: opacity 0.35s, transform .7s;
+  transition: opacity 0.35s, transform .7s, -webkit-transform .7s;
   -webkit-transform: scale(0,1);
-  -ms-transform: scale(0,1);
   transform: scale(0,1);
 
 }
@@ -399,7 +405,6 @@ svg:not(:last-child) {
 .hovereffect:hover .overlay {
   opacity: 1;
   -webkit-transform: scale(.82);
-  -ms-transform: scale(.2);
   transform: scale(.82);
 }
 
@@ -477,30 +482,34 @@ footer li, footer li a { color: #fff; }
 
 @media (min-width: 550px) {
     #dev_icons {
-        display: -webkit-flex;
         /* Safari */
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        -webkit-flex-direction: row;
         /* Safari */
-        flex-direction: row;
-        -webkit-flex-wrap: wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         /* Safari */
-        flex-wrap: wrap;
-        -webkit-justify-content: space-around;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         /* Safari */
-        justify-content: space-around;
-        -webkit-align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         /* Safari */
-        align-items: center;
-        -webkit-align-content: stretch;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         /* Safari */
-        align-content: stretch;
+        -ms-flex-line-pack: stretch;
+            align-content: stretch;
     }
     
     .dev_icon {
-        -webkit-flex-basis: 5%;
         /* Safari */
-        flex-basis: 7%;
+        -ms-flex-preferred-size: 7%;
+            flex-basis: 7%;
     }
     
     #dev_text {
