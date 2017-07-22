@@ -2,7 +2,7 @@
 
 YELLOW: #F1CC15
 DARK BG: #212121
-LIGHT BG: #F0F0F0\
+LIGHT BG: #F0F0F0
 GREY ON LIGHT: #616362
 */
 
@@ -90,6 +90,11 @@ border-top: 1px solid #F0EEEE;
 
 .navbar {
    margin: 0;   
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+    color: orange;
+    border-bottom: orange 3px solid;
 }
 
 /*ABOUT*/
