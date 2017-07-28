@@ -1,5 +1,9 @@
 /*COLOR THEMES
-    1. GREY #C8C8CA 2.BLACK #343434 3. WHITE_1 #E2E1E6 4. WHITE_2 #fff
+   yellow: #ECAC18;
+   wrapper-black: #302E2F;
+   html_body black: #222222;
+    other colors: black-alternative: #6A6565, yellow-alt: #F3CF8B
+
 
 TODO LATER: Create different color themes
 
@@ -24,9 +28,9 @@ TODO LATER: Create different color themes
 .red_border {border: red 1px solid; }
 
 html, body{
-    font-size: 100%;
+    font-size: 14px;
 	font-family: 'Lato', sans-serif;
-	 background: #000;
+	 background: #222222;
 	margin: 0;
 /*    color: #C8C8CA;*/
     
@@ -37,8 +41,9 @@ html, body{
 p,ul li,ol li{
 	margin:0;
 	font-size:14px;
-	letter-spacing: 1px;
+	letter-spacing: .5px;
 }
+
 h1,h2,h3,h4,h5,h6{
 	font: normal normal 2.125em/1.33em 'Lato';
 	text-transform:uppercase;
@@ -46,7 +51,8 @@ h1,h2,h3,h4,h5,h6{
     color: #343434;
 }
 
-li { list-style-type: none; }
+ul li { list-style-type: none; }
+.thesis ol span { margin-left: 2px; }
 
 
  
@@ -58,6 +64,7 @@ li { list-style-type: none; }
 /*END HEADER*/
 
 /*
+TO UPDATE
         #profile_header
             #profile_user
                 #profile_photo
@@ -96,53 +103,15 @@ li { list-style-type: none; }
     overflow: hidden;
     float: left;
     width: 50%;
-/*    max-width: 425px;*/
-    
 }
 
-#profile_photo {
-    width: 120px;
-    height: 120px;
-    border: 4px solid #e5e5e5;
-    float: left;
-    margin-right: 20px;
-}
-#profile_name { float: left;}
 
-#profile_position {
-    font-size: 18px;
-    line-height: 20px;
-    color: #4ca5d0;
-}
-
-/*
-#profile_name h1,
-#profile_name h4 {
-    max-width: 68%;
- 
-}
-*/
-
-/*
-#profile_name h1,
-#profile_name h4 {
-    color: #E2E1E6;
-}
-    
-*/
-#profile_data {
-    overflow: hidden;
-    float: right;    
-    line-height: 1.5;
-    
-}
 
 
 header {
-	background-color: #343434;
-/*    background-size: cover;*/
-/*    height: 150px;*/
- }
+	background-color: #302E2F;
+
+}
 
  .banner {
 	text-align: center;	
@@ -185,48 +154,59 @@ header {
     width: 70%;
    
     overflow:hidden;
-    border-right: 2px solid black;
+    border-right: 2px solid #C8C8CA;
     padding-right: 20px;
 }
 
 #profile_body .right {
     float: right;
     width: 30%;
-    border: 1px solid green;
+    padding-left: 20px;
 }
 
-.exp_title h3 {
-    position: relative;
-    background: #373737;
-    font-size: 14px;
-    line-height: 18px;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 5px 10px 7px 39px;
-    font-weight: 700;
-    border-radius: 4px 0 0 4px;
-    margin-bottom: 10px;
+
+
+
+h3.section_title {
+    color: #ECAC18;
+    padding-bottom: 12px;
+    margin-bottom: 28px;
+    border-bottom: 1px #ECAC18 solid;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.exp_item {
+    margin-bottom: 30px;
 }
 
 .exp_item_header {
-    margin-bottom: 10px;
+    margin-bottom: 10px;  
 }
 
 .exp_item_header .period {
     float: right;
-    font-size: 18px;
+/*    font-size: 14px;*/
 }
 
 .exp_item_header .position {
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 600;
 }
+
+.exp_item_header .position,
+.exp_item_header .company {
+    letter-spacing: 1px;
+}
+
+
 
 .exp_item_header .company {
-    font-size: 14px;
+    font-size: 13px;
 }
 
-.exp_item_body li {
-    line-height: 1.5;
+.exp_item_body {
+    line-height: 1.5;    
 }
 
 
@@ -246,18 +226,105 @@ header {
     border: 3px solid white;    
 }
 
-.sec.right h3 {
-    font-size: 18px;
-    font-weight: 600;
-}
+
 
 .sec.right h4 {
     font-size: 14px;
     font-weight: 600;
 }
 
-.sec.right ol { padding: 0;}
 
-.sec.right ol li { margin-bottom: 15px;}
+#profile_data {
+    text-align: left;
+    line-height: 2;
+}
+
+#profile_data .th {
+    font-weight: 700;
+    width: 90px;
+    margin-right: 10px;
+    text-align: right;
+    display: block;
+    float: left;
+    color: #373737;
+}
+
+.profile, 
+.skills_sec{    
+    margin-bottom: 40px;   
+}
+.links_sec {margin-bottom: 60px;}
+
+/*SKILLS */
+ul.skills{padding:0;text-align:center;}
+.skills li{ 
+    border-radius:6px;
+    display:inline-block;
+    background:#25AAE2;
+    color:#fff;
+    padding:5px 10px;
+    margin:2px 2px 10px;
+}
+/*other colors: black-alternative: #6A6565, yellow-alt: #F3CF8B*/
+.skills li:nth-child(odd){background:#0D9F4A;}
+
+/*border + tail effect*/
+.icon_list li {
+     border: 5px solid rgba(192,192,192,.7);
+    padding: 5px;
+    position:relative;
+    height: 110px;
+    width: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.icon_list li:after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: solid 12px rgba(192,192,192,.7);
+    border-left: solid 12px transparent;
+    border-right: solid 12px transparent;
+   
+}
+
+ ol.icon_list{
+    padding: 0;
+}
+
+.icon_list li img{
+    width: 100%;  
+    height: 100%;
+}
+
+.icon_list .link_name {
+    position: relative;
+    bottom: -15px;
+}
+
+
+/*additional styling*/
+
+ul, ol { padding-left: 20px; }
+
+.exp_item_body,
+.exp_item_header{
+    padding: 5px;
+}
+
+.exp_item_header {
+    border: 1px solid rgba(192,192,192,0.5);
+}
+
+
+
+
 
 

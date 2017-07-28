@@ -17,7 +17,14 @@
 
     <!-- font-awesome icons -->
     <script src="https://use.fontawesome.com/76a57e8650.js"></script>
-
+    <style>
+        .navbar-nav li:not(:first-child) { 
+            border-right: .5px solid rgba(192,192,192,.5); 
+            border-left: .5px solid rgba(192,192,192,.5);
+/*            border: red 2px solid;*/
+        
+        }
+    </style>
 
 </head>
 
@@ -59,8 +66,18 @@
                         <li><a href="#portfolio" class="scroll">Works</a>
                         </li>
                         <li><a href="#footer" class="scroll">Contact</a>
+                        </li>  
+                        
+                        <li><a target="_blank" href="printable_cv/index.html">Download PDF Resume</a>
                         </li>
+                        <li><a href="printable_cv/index.html" class="scroll">View Resume</a>
+                        </li>                
+                   
+                   
+             
+                       
                     </ul>
+                     
                 </nav>
             </div>
             <!-- /.navbar-collapse -->
