@@ -27,15 +27,11 @@ TODO LATER: Create different color themes
 
 .red_border {border: red 1px solid; }
 
-html, body{
+html, body {
     font-size: 14px;
 	font-family: 'Lato', sans-serif;
 	 background: #222222;
-	margin: 0;
-/*    color: #C8C8CA;*/
-    
-    min-height: 1000px;
-/*    border: red 2px solid;*/
+	margin: 0;    
 }
 
 p,ul li,ol li{
@@ -105,9 +101,6 @@ TO UPDATE
     width: 50%;
 }
 
-
-
-
 header {
 	background-color: #302E2F;
 
@@ -115,27 +108,24 @@ header {
 
  .banner {
 	text-align: center;	
-	padding: 2em 0;
+	padding: 1.5em 0;
  }
 
 .banner h2 {
 	border: #fff 3px solid;
-	margin: 0 auto 5px;
+	margin: 0 auto 10px;
 	padding: 10px;
-
-	width: 60%;
+ 	width: 50%;
     font-size: 1.3em;
+       font-size: 28px;
     letter-spacing: 4px;  
     color: #E2E1E6;
-
 
 }
 
 .banner span {
 	color: #E2E1E6;
-	font-size: .85em;
-    padding: 10px 10px;
-    top: -20px;
+	font-size: 16px;
 }
 
 
