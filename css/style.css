@@ -61,13 +61,15 @@ border-top: 1px solid #F0EEEE;
 	width: 60%;
     font-size: 1.3em;
     letter-spacing: 4px;  
-    animation-delay: 1s;
+    -webkit-animation-delay: 1s;  
+            animation-delay: 1s;
 }
 
 .banner span {
 	color: #CCCCCC;
 	font-size: .85em;
-    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
     box-shadow: 0 2px 3px rgba(0,0,0,.4);
 }
 /*END HEADER*/
