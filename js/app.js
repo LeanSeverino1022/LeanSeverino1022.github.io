@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+
     /*NAV LINKS*/
 
     var loadPieCharts = function () {
@@ -77,21 +77,16 @@ $(document).ready(function () {
         }
 
     });
-    
+
     /*NAV LINKS SCROLL TO ANCHOR*/
-    $(".scroll").click(function(event) {
+    $(".scroll").click(function (event) {
         event.preventDefault();
         $('html,body').animate({
-            scrollTop: $(this.hash).offset().top -30
+            scrollTop: $(this.hash).offset().top - 30
         }, 1000);
     });
 
 
-
-
-
-
-    
     $(window).scroll(function () {
         /*ANIMATE EXP_CARDS WHEN IN VIEWPORT*/
 
@@ -112,23 +107,21 @@ $(document).ready(function () {
         });
 
         /*STICKY NAV EFFECT*/
-        var  mn = $(".main_nav_container");
-        var  mns = "main-nav-scrolled";
-        var  hdr = $('header').height();
-        
-      
-        $(window).scroll(function() {
-            if( $(this).scrollTop() > hdr ) {
+        var mn = $(".main_nav_container");
+        var mns = "main-nav-scrolled";
+        var hdr = $('header').height();
+
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > hdr) {
                 mn.addClass(mns);
                 $('body').addClass('pt-180');
-          
+
             } else {
                 mn.removeClass(mns);
                 $('body').removeClass('pt-180');
             }
         });
-
-
 
     });
 
