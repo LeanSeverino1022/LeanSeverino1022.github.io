@@ -78,9 +78,9 @@ TO UPDATE
 */
          
 #wrapper {
-    min-height: 11in;
+    
 /*    min-width:*/
-    min-width: 850px;
+    min-width: 950px;
     max-width: 1050px;
     background: #fff;
     
@@ -324,7 +324,25 @@ ul, ol { padding-left: 20px; }
     margin: 0 auto 10px;;
        
 }
+
+#download_cv {
+    position: fixed;
+    top: 10px;
+    right: 5px;
+    border: 1px solid #ff6666;
 }
+
+#download_cv a {
+    color: #ff6666 !important;
+    text-decoration: none;
+
+
+}
+
+
+
+
+
 
 
 
