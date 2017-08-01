@@ -1,0 +1,31 @@
+NOTE: MAKE SURE TO CHECK THE FF WHEN CHANGES WILL BE MADE
+
+1. PRINT RESULT
+2. LINKS ARE WORKING
+3. LINK TO DOWNLOAD THE RESUME PDF IS WORKING
+
+MAIN COLORS USED:
+
+black: 343434
+blue: #25AAE2
+green: #0D9F4A
+
+
+TABLE OF CONTENTS ( TO UPDATE)
+
+TO UPDATE
+        #profile_header
+            #profile_user
+                #profile_photo
+                #profile_name_area
+                    #profile_name
+                        h1
+                        h4
+            #profile_data
+                .profile_row name
+                .profile_row birth
+                .profile_row address
+                .profile_row phone
+                .profile_row email
+                .profile_row website
+*/
