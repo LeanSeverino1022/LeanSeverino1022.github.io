@@ -145,7 +145,6 @@ border-top: 1px solid #F0EEEE;
     border: 3px solid #fff;
 }
 
-
 #skills {   
      background: #212121;
 }
@@ -252,6 +251,7 @@ svg:not(:last-child) {
 .exp_job_year_info {
       float: left;
     width: 100%;
+    margin-bottom: 15px;
 }
 
 .exp_job_year_info h4 {
