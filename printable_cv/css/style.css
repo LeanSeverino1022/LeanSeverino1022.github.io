@@ -334,6 +334,14 @@ p#endnote { text-align: center; }
  }
 
 
+.hanging_indents {
+    padding-left: .7em;
+    text-indent:-.7em;
+}
+
+
+
+
 
 
 
