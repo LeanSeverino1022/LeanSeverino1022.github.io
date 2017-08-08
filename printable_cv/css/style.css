@@ -247,6 +247,11 @@ ul.skills{padding:0;text-align:center;}
     height: 100%;
 }
 
+.icon_list li div{
+    font-size: 82px;
+}
+
+
 .icon_list .link_name {
     position: relative;
     bottom: -15px;
