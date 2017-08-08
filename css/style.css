@@ -152,6 +152,11 @@ header {
     margin-bottom: 20px;
 }
 
+.image-container {
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
 #about .card_email {
     margin-bottom: 15px;
     border-radius: 5px;
@@ -178,6 +183,8 @@ header {
 #skills {
     background: #212121;
 }
+
+#skills .row { margin-right: 0; }
 
 #skills .skills-grp {
     background-color: #F5F7F9;
@@ -293,7 +300,7 @@ svg:not(:last-child) {
 }
 
 .exp_card span {
-    color: #FFAD00;
+    font-size: .8em;
 }
 
 .exp_job_year_info {
@@ -547,3 +554,4 @@ footer li a {
     padding-left: .7em;
     text-indent: -.7em;
 }
+

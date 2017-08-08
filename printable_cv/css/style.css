@@ -277,6 +277,8 @@ p#endnote { text-align: center; }
     margin: 0 auto 10px;       
 }
 
+.educ_sec { line-height: 2;}
+
 #download_cv {
     position: fixed;  
     bottom: 0;
@@ -350,3 +352,7 @@ p#endnote { text-align: center; }
 
 
 
+
+span {
+    
+}
