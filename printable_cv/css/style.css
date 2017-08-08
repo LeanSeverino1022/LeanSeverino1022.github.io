@@ -294,8 +294,8 @@ p#endnote { text-align: center; }
     background: #343434;
     
     max-width: 1050px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 11.1%;
+/*    transform: translateX(-50%);*/
 
 }
 
