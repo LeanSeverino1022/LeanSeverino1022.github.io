@@ -333,9 +333,8 @@ p#endnote { text-align: center; }
     }
 
     .page-break {
-        page-break-before: always;
-        margin-bottom: 100px;
-        
+/*        page-break-before: always;*/
+        margin-bottom: 120px;      
 
     }
  }
