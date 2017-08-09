@@ -1,14 +1,14 @@
 $(document).ready(function () {
 
     /*NAV LINKS*/
-
+    
     var loadPieCharts = function () {
         $('#demo-pie-1').pieChart({
             barColor: '#F7BB06',
             trackColor: '#636363',
             lineCap: 'square',
             lineWidth: 12,
-            size: 130,
+            size: 100,
             animate: {
                 duration: 2000,
                 enabled: true
@@ -24,7 +24,7 @@ $(document).ready(function () {
             trackColor: '#636363',
             lineCap: 'square',
             lineWidth: 12,
-            size: 130,
+            size: 100,
             animate: {
                 duration: 2000,
                 enabled: true
@@ -39,7 +39,7 @@ $(document).ready(function () {
             trackColor: '#636363',
             lineCap: 'square',
             lineWidth: 12,
-            size: 130,
+            size: 100,
             animate: {
                 duration: 2000,
                 enabled: true
@@ -54,7 +54,7 @@ $(document).ready(function () {
             trackColor: '#636363',
             lineCap: 'square',
             lineWidth: 12,
-            size: 130,
+            size: 100,
             animate: {
                 duration: 2000,
                 enabled: true

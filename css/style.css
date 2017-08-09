@@ -118,13 +118,12 @@ header {
     border-left: .5px solid rgba(192, 192, 192, .5);
 }
 
-
 /*ABOUT*/
 
 #about,
 #exp,
 #portfolio {
-    padding: 35px 20px 48px;
+    padding: 35px 5px 48px;
     background: #F7F7F7;
     color: #000;
 }
@@ -311,7 +310,6 @@ svg:not(:last-child) {
 
 .exp_job_year_info h4 {
     letter-spacing: 2px;
-    font-weight: 700;
     font-size: 16px !important;
     color: #333;
     text-transform: uppercase;
@@ -335,8 +333,8 @@ svg:not(:last-child) {
 }
 
 .exp_job_enum {
-    /*    float: right;*/
-    /*    text-align: center;*/
+    text-align: left;
+    line-height: 1.5;    
 }
 
 .exp_job_enum h4 {
@@ -350,14 +348,9 @@ svg:not(:last-child) {
     /*    text-align: left;*/
 }
 
-.exp_job_enum.csr h4 {
-    font-size: 25px;
-}
+.exp_indie h4 { font-size: 18px;}
 
-.exp_job_enum p {
-    font-size: 0.9em;
-    line-height: 1.9em;
-    margin-top: 10px;
+.exp_job_enum p{    
     text-align: center;
 }
 
@@ -471,6 +464,8 @@ footer li a {
     color: #fff;
 }
 
+footer ul li{ margin-bottom: 8px;}
+
 
 /*-- //footer --*/
 
@@ -543,15 +538,25 @@ footer li a {
         display: none;
     }
     .exp_card {
-        padding: 5% 7%;
+        padding: 5% 7%;        
     }
+
     .exp_job_enum p {
-        text-align: left;
+        text-align: left ;
     }
+    
+    .exp_indie h4 { font-size: 22px;}
+}
+
+/*HELPERS*/
+.break-word {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .hanging_indents {
     padding-left: .7em;
     text-indent: -.7em;
+    margin-left: 10px;
 }
 
