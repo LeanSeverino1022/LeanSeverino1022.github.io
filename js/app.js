@@ -1,73 +1,41 @@
+
 $(document).ready(function () {
 
-    /*NAV LINKS*/
+    setupPieCharts();
+    smoothScrollToPageAnchors(); 
+    fadeUpCardsOnView();
+    enableStickyNavBar();
     
-    var loadPieCharts = function () {
-        $('#demo-pie-1').pieChart({
+    createGallery(); 
+ 
+ 
+});
+
+
+
+function setupPieCharts(){
+    
+    const loadPieCharts = function () {
+        $('.skills-pie').pieChart({
             barColor: '#F7BB06',
             trackColor: '#636363',
             lineCap: 'square',
             lineWidth: 12,
             size: 100,
             animate: {
-                duration: 2000,
+                duration: 2500,
                 enabled: true
             },
             onStep: function (from, to, percent) {
                 $(this.element).find('.pie-value').text(Math.round(percent) + '%');
             },
 
-        });
-
-        $('#demo-pie-2').pieChart({
-            barColor: '#F7BB06',
-            trackColor: '#636363',
-            lineCap: 'square',
-            lineWidth: 12,
-            size: 100,
-            animate: {
-                duration: 2000,
-                enabled: true
-            },
-            onStep: function (from, to, percent) {
-                $(this.element).find('.pie-value').text(Math.round(percent) + '%');
-            }
-        });
-
-        $('#demo-pie-3').pieChart({
-            barColor: '#F7BB06',
-            trackColor: '#636363',
-            lineCap: 'square',
-            lineWidth: 12,
-            size: 100,
-            animate: {
-                duration: 2000,
-                enabled: true
-            },
-            onStep: function (from, to, percent) {
-                $(this.element).find('.pie-value').text(Math.round(percent) + '%');
-            }
-        });
-
-        $('#demo-pie-4').pieChart({
-            barColor: '#F7BB06',
-            trackColor: '#636363',
-            lineCap: 'square',
-            lineWidth: 12,
-            size: 100,
-            animate: {
-                duration: 2000,
-                enabled: true
-            },
-            onStep: function (from, to, percent) {
-                $(this.element).find('.pie-value').text(Math.round(percent) + '%');
-            }
-        });
+        });    
     }
 
     /*ANIMATE PIES WHEN IN VIEWPORT*/
     $(window).scroll(function () {
-        var hT = $('#demo-pie-3').offset().top,
+        const hT = $('#demo-pie-3').offset().top,
             hH = $('#demo-pie-3').outerHeight(),
             wH = $(window).height(),
             wS = $(this).scrollTop();
@@ -78,17 +46,22 @@ $(document).ready(function () {
 
     });
 
+}
+
+function smoothScrollToPageAnchors() {
     /*NAV LINKS SCROLL TO ANCHOR*/
     $(".scroll").click(function (event) {
         event.preventDefault();
         $('html,body').animate({
-            scrollTop: $(this.hash).offset().top - 30
+            scrollTop: $(this.hash).offset().top - 40
         }, 1000);
     });
+}
 
+function fadeUpCardsOnView() {
 
     $(window).scroll(function () {
-        /*ANIMATE EXP_CARDS WHEN IN VIEWPORT*/
+
 
         let wS = $(window).scrollTop(),
             wH = $(window).height();
@@ -105,24 +78,24 @@ $(document).ready(function () {
             }
 
         });
-
-        /*STICKY NAV EFFECT*/
-        var mn = $(".main_nav_container");
-        var mns = "main-nav-scrolled";
-        var hdr = $('header').height();
-
-
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > hdr) {
-                mn.addClass(mns);
-                $('body').addClass('pt-180');
-
-            } else {
-                mn.removeClass(mns);
-                $('body').removeClass('pt-180');
-            }
-        });
-
     });
+}
 
-});
+function enableStickyNavBar() {
+    /*STICKY NAV EFFECT*/
+    const mn = $(".main_nav_container");
+    const mns = "main-nav-scrolled";
+    const hdr = $('header').height();
+
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > hdr) {
+            mn.addClass(mns);
+            $('body').addClass('pt-180');
+
+        } else {
+            mn.removeClass(mns);
+            $('body').removeClass('pt-180');
+        }
+    });
+}

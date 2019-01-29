@@ -5,16 +5,17 @@
 
 html,
 body {
-    font-size: 100%;
+    font-size:  100%;
     font-family: 'Lato', sans-serif;
     margin: 0;
     color: #333;
+    letter-spacing: 1px;
 }
 
 body {
     max-width: 1400px;
     margin: 0 auto;
-    background: #000;
+ 
 }
 
 p,
@@ -25,13 +26,7 @@ ol li {
     letter-spacing: 1px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font: normal normal 2.125em/1.33em 'Lato';
+h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     margin: 0;
 }
@@ -65,8 +60,17 @@ body a:hover {
     color: #4fc680;
 }
 
+/*==================================================
+Layout
+==================================================*/
+#about, #exp, #portfolio, #skills {
+    padding: 35px 5px 48px;
+}
 
-/*HEADER - section with my name and position*/
+
+/*==================================================
+HEADER - section with my name and position
+==================================================*/
 
 header {
     background: url(../images/banner.jpg) no-repeat center top;
@@ -97,12 +101,12 @@ header {
     -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
     box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
 }
-
-
 /*END HEADER*/
 
 
-/*NAVIGATION SEC*/
+/*=============================================
+Main Navigation
+==============================================*/
 
 .navbar {
     margin: 0;
@@ -118,24 +122,22 @@ header {
     border-left: .5px solid rgba(192, 192, 192, .5);
 }
 
-/*ABOUT*/
+/*=============================================
+About Me 
+==============================================*/
 
+/* TODO: cleanup messy stuff 
+    section layout(padding, margin)
+    section heading ( 1 style onlu) - add to defaults / or text
+*/
 #about,
 #exp,
 #portfolio {
-    padding: 35px 5px 48px;
     background: #F7F7F7;
-    color: #000;
+ 
 }
 
-#about .about_me_text h1,
-#skills h3 {
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0;
-    padding-bottom: 11px;
-    font: normal normal 2.125em/1.33em 'Lato';
-}
+
 
 #about .about_me_text h1 {
     color: #000
@@ -179,81 +181,48 @@ header {
     border: 3px solid #fff;
 }
 
+/*=============================================
+SKills Section 
+==============================================*/
+
 #skills {
     background: #212121;
-}
-
-#skills .row { margin-right: 0; }
-
-#skills .skills-grp {
-    background-color: #F5F7F9;
-    color: #3d4351;
-    background-attachment: fixed;
-}
-
-.pie_charts {
-    margin: 0 auto;
-    padding-bottom: 30px;
-    padding: 35px 30px 48px;
     color: #F7F4F7;
-    letter-spacing: 1px;
 }
 
-.pie_charts .item {
-    padding: 1em 0;
-    font-weight: 700;
-    color: ;
+.skills-sec-heading{
+   letter-spacing: 1px;
 }
+
+.pie-charts-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pie-charts-container .item {
+    position: relative;
+    padding: 0 2.5rem;
+    margin-bottom: 15px;
+}
+
+.pie-charts-text {   
+    letter-spacing: 1.2px;
+}
+
+/* seems to center the text to the inside the pie. TODO: rename */
+
 
 .pie-value {
     display: block;
     position: absolute;
     font-size: 20px;
-    top: 35%;
+    top: 30%;
     left: 0;
     right: 0;
     color: #eb5424;
 }
-
-#skills ul li {
-    list-style-type: none;
-    /*line-height: 16px;*/
-    margin-bottom: 16px;
-}
-
-.pie_charts h4 {
-    font-size: 14px;
-}
-
-#dev_icons {
-    display: none;
-}
-
-.dev_icon {
-    float: left;
-    width: 33.33%;
-    padding: 20px 0;
-    vertical-align: middle;
-    max-height: 98px;
-}
-
-.dev_icon svg {
-    width: 70%;
-    position: relative;
-}
-
-
-/*for positioning check inline styles*/
-
-.dev_icon path {
-    fill: #fff;
-}
-
-svg:not(:last-child) {
-    border: red 100px solid;
-    margin-right: 35px;
-}
-
 
 /*END OF SVG ICONS SEC*/
 
@@ -560,3 +529,49 @@ footer ul li{ margin-bottom: 8px;}
     margin-left: 10px;
 }
 
+#skills img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;;
+    /* display: none; */
+}
+
+#skills {
+    /* background: #fff; */
+}
+
+.flex-icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: red 2px solid; */
+}
+
+.m-b-1{
+    margin-bottom: 2rem;
+}
+
+.flex-icon-container img {
+    fill: red;
+    display: block;
+}
+
+.flex-icon-container span {
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+}
+
+.flex-icon-container > div {
+    /* border: red 2px solid; */
+    max-width: 100px;
+    text-align: center;
+}
+
+.tae{
+    height: 400px;
+    width: 300px;
+    background: red;
+    border: green 2px solid;
+}
