@@ -25,7 +25,7 @@
             $(anchor).attr({ href: 'https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_image' });
 
             let img = document.createElement("img");
-            $(img).attr({ class: 'img-responsive' , alt:'github-ss', src: 'images/Capture.png'});
+            $(img).attr({ class: 'img-responsive' , alt:'github-ss', src: 'icons/git.svg'});
 
             // return card. 1 card = 1 project
             return $(div).append($(anchor).append(img)) 
