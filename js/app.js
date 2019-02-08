@@ -6,7 +6,8 @@ $(document).ready(function () {
     fadeUpCardsOnView();
     enableStickyNavBar();
     
-    renderWorks();  
+    createGallery(); 
+ 
  
 });
 
@@ -64,14 +65,14 @@ function fadeUpCardsOnView() {
 
         let wS = $(window).scrollTop(),
             wH = $(window).height();
+        //                    
+        //      loop through all the .exp_card elements
+        $(".exp_card, .github-card").each(function () {
 
-            $(".exp_card, .github-card").each(function () {
-
-            let hT = $(this).offset().top, //offset coordinates relative to the document.
-                hH = $(this).outerHeight() / 2; /*divide by 2 to load element once 25% of the element is in viewport*/
+            let hT = $(this).offset().top,
+                hH = $(this).outerHeight() / 4; /*divide by two to load element once 25% of the element is in viewport*/
 
             if (wS > (hT + hH - wH)) {
-
                 $(this).css('visibility', 'visible');
                 $(this).addClass('animated fadeInUp');
             }

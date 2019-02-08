@@ -10,12 +10,12 @@ body {
     margin: 0;
     color: #333;
     letter-spacing: 1px;
-    line-height: 1.5rem;
 }
 
 body {
     max-width: 1400px;
-    margin: 0 auto; 
+    margin: 0 auto;
+ 
 }
 
 p,
@@ -44,16 +44,16 @@ body a:hover {
 
 /*COLORS*/
 
-.text-yellow {
+.yellow {
     color: #E2AA03
 }
 
-.bg-yellow {
+.yellowbg {
     background: #E2AA03
 }
 
-.bg-white {
-    background-color: #F7F7F7;
+.border {
+    border-top: 1px solid #F0EEEE;
 }
 
 .fa-check {
@@ -63,7 +63,7 @@ body a:hover {
 /*==================================================
 Layout
 ==================================================*/
-#about, #exp, #skills {
+#about, #exp, #portfolio, #skills {
     padding: 35px 5px 48px;
 }
 
@@ -130,6 +130,14 @@ About Me
     section layout(padding, margin)
     section heading ( 1 style onlu) - add to defaults / or text
 */
+#about,
+#exp,
+#portfolio {
+    background: #F7F7F7;
+ 
+}
+
+
 
 #about .about_me_text h1 {
     color: #000
@@ -226,9 +234,17 @@ SKills Section
     color: #F1CC15;
 }
 
+#exp {
+    background: #EDEDED;
+}
+
 #exp h3 {
     margin-bottom: 30px;
     font-size: 36px;
+}
+
+.exp_box {
+    padding: 0;
 }
 
 .exp_card {
@@ -238,7 +254,10 @@ SKills Section
     border-left: none;
     border-right: none;
     border-top: none;
+    ;
     padding: 1em 10px;
+    -webkit-box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2);
     -webkit-transition: 0.3s;
     transition: 0.3s;
     background: #fff;
@@ -307,53 +326,38 @@ SKills Section
 
 /*PORTFOLIO SECTION STYLES*/
 
-#portfolio {
-    padding: 5%;
-}
-
 .github-card {
-    /* -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5); */
-    -webkit-transition: 0.300s;
-    transition: 0.300s;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5);
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     margin-bottom: 30px;
     visibility: hidden;
-    height: 400px;
-    background: #fff;
 }
 
-
-.github-card .card-image {
-    height: 240px; 
-    overflow: hidden;
-    width: 100%;
+.github-card:hover {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.card-image img {
-    height: 100%;
-    width: auto;
-}
-
-.github-card .card-content {
-    padding: 10px 20px 10px;
-    font-size: 1.5rem;
-    height: 150px;
-    overflow: hidden;    
-    border-top: 1px solid rgba(160,160,160,0.2);
-}
-
-.card-title {
-    line-height: 2.5rem;
-}
-
-/* card action = the icon skills found on the portfolio cards */
-.card-action {
-    padding: 1.6rem 0 0;
+.works-note {
+    background: yellow;
+    color: #333;
+    padding: 2px 5px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .portfolio_grid {
     margin: 2em 0 0 0;
+}
+
+.portfolio-item {
+    margin-bottom: 40px;
+}
+
+.portfolio-item h3 a {
+    color: #E2AA03;
 }
 
 .hovereffect {
@@ -362,20 +366,50 @@ SKills Section
     position: relative;
 }
 
-.icon-circle {
-    background-color: #F1F3F4;
-    width: 55.5px;
-    height: 55.5px;
-    /* padding: 10px 16px; */
-    border-radius: 55.5px;
-    font-size: 24px;
-    margin-right: 9px;
+.hovereffect .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+    -webkit-transition: opacity 0.35s, -webkit-transform .7s;
+    transition: opacity 0.35s, -webkit-transform .7s;
+    transition: opacity 0.35s, transform .7s;
+    transition: opacity 0.35s, transform .7s, -webkit-transform .7s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
 }
 
-.icon-circle img{
-    width: 30px;
-    height: 30px;
+.hovereffect:hover .overlay {
+    opacity: 1;
+    -webkit-transform: scale(.82);
+    transform: scale(.82);
 }
+
+.hovereffect:hover img,
+.hovereffect:hover svg {
+    /*either change the brightness or adjust opacity or both*/
+    filter: brightness(0.3);
+    -webkit-filter: brightness(0.3);
+    -moz-filter: brightness(0.3);
+    -o-filter: brightness(0.3);
+    -ms-filter: brightness(0.3);
+    opacity: .8;
+}
+
+.hovereffect h4 {
+    text-transform: uppercase;
+    text-align: center;
+    /*position: relative;*/
+    font-size: 2em;
+    color: #F1CC15;
+    padding: 1em 0 0.5em;
+    letter-spacing: 2px;
+}
+
 
 /*-- //portfolio --*/
 
@@ -405,6 +439,84 @@ footer ul li{ margin-bottom: 8px;}
 /*-- //footer --*/
 
 
+/*-- to-top: | UItoTop jQuery Plugin 1.2 --*/
+
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 2%;
+    overflow: hidden;
+    z-index: 999;
+    width: 51px;
+    height: 51px;
+    border: none;
+    text-indent: 100%;
+    background: url(../images/arrow.png) no-repeat 0px 0px;
+}
+
+#toTopHover {
+    width: 51px;
+    height: 51px;
+    display: block;
+    overflow: hidden;
+    float: right;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#toTop:active,
+#toTop:focus {
+    outline: none;
+}
+
+@media (min-width: 550px) {
+    #dev_icons {
+        /* Safari */
+       
+        display: -webkit-box;       
+        display: -ms-flexbox;       
+        display: flex;
+        /* Safari */
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        /* Safari */
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        /* Safari */
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        /* Safari */
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        /* Safari */
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+    }
+    .dev_icon {
+        /* Safari */
+        -ms-flex-preferred-size: 7%;
+        flex-basis: 7%;
+    }
+    #dev_text {
+        display: none;
+    }
+    .exp_card {
+        padding: 5% 7%;        
+    }
+
+    .exp_job_enum p {
+        text-align: left ;
+    }
+    
+    .exp_indie h4 { font-size: 22px;}
+}
+
 /*HELPERS*/
 .break-word {
     overflow-wrap: break-word;
@@ -417,22 +529,15 @@ footer ul li{ margin-bottom: 8px;}
     margin-left: 10px;
 }
 
-.shadow {
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-}
-
-.m-b-1{
-    margin-bottom: 2rem;
-}
-
-
-
-#skills .flex-icon-container img{
+#skills img{
     width: 50px;
     height: 50px;
     margin: 10px;;
+    /* display: none; */
+}
+
+#skills {
+    /* background: #fff; */
 }
 
 .flex-icon-container {
@@ -442,6 +547,15 @@ footer ul li{ margin-bottom: 8px;}
     /* border: red 2px solid; */
 }
 
+.m-b-1{
+    margin-bottom: 2rem;
+}
+
+.flex-icon-container img {
+    fill: red;
+    display: block;
+}
+
 .flex-icon-container span {
     max-width: 100%;
     overflow: hidden;
@@ -449,48 +563,15 @@ footer ul li{ margin-bottom: 8px;}
     display: block;
 }
 
-.flex-icon-container > div.icon {
+.flex-icon-container > div {
+    /* border: red 2px solid; */
     max-width: 100px;
     text-align: center;
 }
 
-
-/* 
-    PLUGIN RELATED
-*/
-/*-- to-top: | UItoTop jQuery Plugin 1.2 --*/
-
-#toTop {
-    display: none;
-    text-decoration: none;
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    overflow: hidden;
-    z-index: 999;
-    width: 51px;
-    height: 51px;
-    border: none;
-    text-indent: 100%;
-    background: url(../images/arrow.png) no-repeat 0px 0px;
-}
-
-#toTop:hover{
-    opacity: .9;
-}
-#toTopHover {
-    
-    width: 51px;
-    height: 51px;
-    display: block;
-    overflow: hidden;
-    float: right;
-    opacity: .5;
-    -moz-opacity: 0;
-    filter: alpha(opacity=0);
-}
-
-#toTop:active,
-#toTop:focus {
-    outline: none;
+.tae{
+    height: 400px;
+    width: 300px;
+    background: red;
+    border: green 2px solid;
 }
