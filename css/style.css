@@ -308,7 +308,12 @@ SKills Section
 /*PORTFOLIO SECTION STYLES*/
 
 #portfolio {
-    padding: 5%;
+    padding: 0;   
+}
+
+#portfolio .container {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .github-card {
@@ -328,6 +333,7 @@ SKills Section
     height: 240px; 
     overflow: hidden;
     width: 100%;
+    background-size: cover;
 }
 
 .card-image img {
@@ -493,4 +499,15 @@ footer ul li{ margin-bottom: 8px;}
 #toTop:active,
 #toTop:focus {
     outline: none;
+}
+
+
+/* bug fix */
+
+/* portfolio cards too small on some very small device. allow scroll on portfolio section only */
+#portfolio {
+    overflow-x: scroll;
+}
+.github-card {
+    min-width: 360px;
 }
