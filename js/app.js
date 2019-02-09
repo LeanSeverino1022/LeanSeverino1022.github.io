@@ -1,18 +1,8 @@
+if(typeof appNamespace === "undefined") {
+    window.appNamespace = {};
+}
 
-$(document).ready(function () {
-
-    setupPieCharts();
-    smoothScrollToPageAnchors(); 
-    fadeUpCardsOnView();
-    enableStickyNavBar();
-    
-    renderWorks();  
- 
-});
-
-
-
-function setupPieCharts(){
+appNamespace.setupPieCharts = function(){
     
     const loadPieCharts = function () {
         $('.skills-pie').pieChart({
@@ -31,7 +21,7 @@ function setupPieCharts(){
 
         });    
     }
-
+    
     /*ANIMATE PIES WHEN IN VIEWPORT*/
     $(window).scroll(function () {
         const hT = $('#demo-pie-3').offset().top,
@@ -46,8 +36,8 @@ function setupPieCharts(){
     });
 
 }
-
-function smoothScrollToPageAnchors() {
+    
+appNamespace.smoothScrollToPageAnchors = function() {
     /*NAV LINKS SCROLL TO ANCHOR*/
     $(".scroll").click(function (event) {
         event.preventDefault();
@@ -56,8 +46,8 @@ function smoothScrollToPageAnchors() {
         }, 1000);
     });
 }
-
-function fadeUpCardsOnView() {
+    
+appNamespace.fadeUpCardsOnView = function() {
 
     $(window).scroll(function () {
 
@@ -79,8 +69,8 @@ function fadeUpCardsOnView() {
         });
     });
 }
-
-function enableStickyNavBar() {
+    
+appNamespace.enableStickyNavBar = function() {
     /*STICKY NAV EFFECT*/
     const mn = $(".main_nav_container");
     const mns = "main-nav-scrolled";
@@ -98,3 +88,20 @@ function enableStickyNavBar() {
         }
     });
 }
+
+
+$(document).ready(function () {
+
+    appNamespace.setupPieCharts();
+    appNamespace.smoothScrollToPageAnchors(); 
+    appNamespace.fadeUpCardsOnView();
+    appNamespace.enableStickyNavBar();
+    
+    appNamespace.renderWorks();  
+    // $( "#toTopHover" ).on( "click", function() {
+    //     renderWorks();  
+    //     alert('tae')
+    //   });
+ 
+});
+
