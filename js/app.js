@@ -98,10 +98,6 @@ $(document).ready(function () {
     appNamespace.enableStickyNavBar();
     
     appNamespace.renderWorks();  
-    // $( "#toTopHover" ).on( "click", function() {
-    //     renderWorks();  
-    //     alert('tae')
-    //   });
  
 });
 
