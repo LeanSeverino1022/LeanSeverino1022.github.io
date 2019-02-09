@@ -20,6 +20,7 @@ header, .main-nav-scrolled  {
   position: fixed;
   width: 100%;
   top: 0;
+  max-width: 1400px;
 /*    visibility: hidden;*/
 }
 
