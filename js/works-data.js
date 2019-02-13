@@ -6,10 +6,10 @@ if(typeof appNamespace === "undefined") {
 {
     let data = [
         {
-            title: 'Friend Finder',
-            description: 'some text here',
+            title: 'Search and Filter Boilerplate',
+            description: 'Easy to edit template for search & filter React projects.',
             url: 'https://css-tricks.com/video-screencasts/',
-            img: 'images/gallery/people-finder-react.png',
+            img: 'images/gallery/search-filter-react.png',
             skills: ['react', 'html','css','javascript']
         },
         {
