@@ -505,19 +505,16 @@ footer ul li{ margin-bottom: 8px;}
 
 /* bug fix */
 
-/* 1. portfolio cards too small on some very small device. allow scroll on portfolio section only */
 
-/* remove padding for very devices smaller than 370px*/
 @media only screen and (max-width: 370px) {
+    
+    /* remove padding for very devices smaller than 370px*/
     .portfolio_grid.row > .col-xs-12 {
         padding-left: 0;
         padding-right: 0;
     }
     .github-card {
-        min-width: 360px;
+        width: 100%;
     }
-    #portfolio {
-        overflow-x: scroll;
-    }
-    
+
 }
