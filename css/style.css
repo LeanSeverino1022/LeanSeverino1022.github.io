@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+a:hover, a:focus {
+    text-decoration: none;
+}
+
 html,
 body {
     font-size:  100%;
@@ -189,9 +193,14 @@ SKills Section
 
 .pie-charts-container
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .pie-charts-container .item {
@@ -318,10 +327,12 @@ SKills Section
 }
 
 .github-card {
+    position: relative;
     /* -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5); */
     -webkit-transition: 0.300s;
     transition: 0.300s;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     margin-bottom: 30px;
     visibility: hidden;
@@ -352,6 +363,57 @@ SKills Section
 
 .card-title {
     line-height: 2.5rem;
+}
+
+/* card overlays */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(192, 192, 192, .4);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 0;   
+    -webkit-transition: all .5s ease;   
+    transition: all .5s ease;
+}
+
+.card-overlay:hover {
+    opacity: 1;
+} 
+
+.card-overlay-action,
+.card-overlay-action:visited {
+    color: #fff;
+}
+
+.card-overlay-action{
+    min-width: 150px;
+    margin-top: 10px;
+    background-color: rgba(41, 40, 40, 0.7);
+   
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+.card-overlay-action:hover{
+    background-color: rgba(41, 40, 40, 1);
 }
 
 /* card action = the icon skills found on the portfolio cards */
@@ -426,14 +488,12 @@ footer ul li{ margin-bottom: 8px;}
 
 .shadow {
     -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 .m-b-1{
     margin-bottom: 2rem;
 }
-
 
 
 #skills .flex-icon-container img{
@@ -443,9 +503,14 @@ footer ul li{ margin-bottom: 8px;}
 }
 
 .flex-icon-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     /* border: red 2px solid; */
 }
 
