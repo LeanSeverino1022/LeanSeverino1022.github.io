@@ -43,7 +43,7 @@ if (typeof appNamespace === 'undefined') {
             url: 'https://css-tricks.com/video-screencasts/',
             img: 'images/gallery/custom-clothes.png',
             actionLinks: { 
-                 "View Online" : "https://everthread.com/media/mensClothing_demo_newCopy-2.mp4"
+                 "View Demo" : "../pages/product-demo.html"
             }
         },
         {
