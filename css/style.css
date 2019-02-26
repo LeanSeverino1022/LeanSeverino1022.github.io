@@ -335,7 +335,7 @@ SKills Section
     -webkit-transition: 0.3s;
     transition: 0.3s;
     margin-bottom: 30px;
-    visibility: hidden;
+    visibility: hidden; /*purpose: animation related */
     height: 400px;
     background: #fff;
 }
@@ -367,6 +367,8 @@ SKills Section
 
 /* card overlays */
 .card-overlay {
+    -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
     position: absolute;
     top: 0;
     left: 0;
@@ -374,7 +376,14 @@ SKills Section
     right: 0;
     height: 100%;
     width: 100%;
-    background: rgba(192, 192, 192, .4);
+    background: rgba(192, 192, 192, .4);    
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay-flex-container {
+    height: 100%;
+    width: 100%; 
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -388,14 +397,12 @@ SKills Section
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    opacity: 0;   
-    -webkit-transition: all .5s ease;   
-    transition: all .5s ease;
-}
+}      
 
-.card-overlay:hover {
+.github-card:hover .card-overlay{
+    visibility: visible;;
     opacity: 1;
-} 
+}
 
 .card-overlay-action,
 .card-overlay-action:visited {
@@ -412,6 +419,7 @@ SKills Section
     line-height: 1.3333333;
     border-radius: 6px;
 }
+
 .card-overlay-action:hover{
     background-color: rgba(41, 40, 40, 1);
 }
@@ -511,7 +519,6 @@ footer ul li{ margin-bottom: 8px;}
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    /* border: red 2px solid; */
 }
 
 .flex-icon-container span {

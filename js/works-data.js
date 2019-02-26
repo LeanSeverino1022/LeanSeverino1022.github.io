@@ -100,11 +100,13 @@ if (typeof appNamespace === 'undefined') {
 
             const $cardOverlay = `
                 <div class="card-overlay">
+                    <div class="overlay-flex-container">
                     ${Object.keys(item.actionLinks).map(
                         key =>
                             '<a target="_blank" href="'+item.actionLinks[key]+'" class="card-overlay-action">'+ key + '</a>'
                         ).join('')
-                    }                 
+                    }
+                    </div>                 
                 </div>`;
 
             $card.append($cardImage);

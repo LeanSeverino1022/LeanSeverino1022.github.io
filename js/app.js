@@ -1,3 +1,14 @@
+window.USER_IS_USING_TOUCH_DEVICE = false;
+
+try {
+    document.createEvent("TouchEvent");
+    window.USER_IS_USING_TOUCH_DEVICE = true
+ }
+ catch (e) {
+    window.USER_IS_USING_TOUCH_DEVICE = false;
+ }
+
+
 if(typeof appNamespace === "undefined") {
     window.appNamespace = {};
 }
@@ -82,11 +93,22 @@ appNamespace.enableStickyNavBar = function() {
             mn.addClass(mns);
             $('body').addClass('pt-180');
 
-        } else {
+        } else { 
             mn.removeClass(mns);
             $('body').removeClass('pt-180');
         }
     });
+}
+
+// set show hide of card overlay
+appNamespace.enableCardOverlayOnMobile = function(){
+
+    if(window.USER_IS_USING_TOUCH_DEVICE) {
+        $('.github-card').on('click', function(evt){
+            $('.card-overlay').hide();
+            $('.card-overlay', this).show();
+        })
+    }    
 }
 
 
@@ -98,6 +120,8 @@ $(document).ready(function () {
     appNamespace.enableStickyNavBar();
     
     appNamespace.renderWorks();  
+    appNamespace.enableCardOverlayOnMobile();
  
 });
+
 
