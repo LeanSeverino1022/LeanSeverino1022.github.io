@@ -285,6 +285,7 @@ p#endnote { text-align: center; }
 .educ_sec { line-height: 2;}
 
 #download_cv {
+    display:none;
     position: fixed;  
     bottom: 0;
     right: 5px;
