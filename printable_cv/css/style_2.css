@@ -40,6 +40,7 @@ body {
     background: #525659;
 	margin: 0;
     max-height: calc(100vh - 20px);
+    line-height: 1.5;
 }
 
 p,ul li,ol li{
@@ -76,9 +77,10 @@ h1,h2,h3,h4,h5,h6{
     color: var(--red);
 }
 
+.thesis ul {
+    margin-bottom: 0;
+}
 
-
-.thesis ol span { margin-left: 2px; }
 
 #wrapper {
     background: #fff;
@@ -137,6 +139,11 @@ header {
     padding: 24px 30px 56px;
 }
 
+#profile_body {
+    display: flex;
+    align-items: stretch; /* stretched height of all flex children to be equal */    
+}
+
 #profile_body .left {
     float: left;
     width: 30%;
@@ -165,7 +172,7 @@ h3.section-title {
     font-weight: 500;
 }
 
-.exp-item {
+.exp-item:not(:last-child) {
     margin-bottom: 15px;
 }
 
@@ -195,9 +202,7 @@ h3.section-title {
     font-size: 13px;
 }
 
-.exp-item_body {
-    line-height: 1.5;
-}
+
 
 
 /* .sec.right { text-align: center; } */
@@ -215,7 +220,8 @@ h3.section-title {
 
 #profile_data {
     text-align: left;
-    line-height: 2;
+    line-height: 1.8;
+    /* border: red 2px solid; */
 }
 
 #profile_data .th {
