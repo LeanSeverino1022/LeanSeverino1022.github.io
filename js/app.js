@@ -114,13 +114,13 @@ appNamespace.enableCardOverlayOnMobile = function(){
 
 $(document).ready(function () {
 
-    appNamespace.setupPieCharts();
-    appNamespace.smoothScrollToPageAnchors(); 
+    // appNamespace.setupPieCharts();
+    // appNamespace.smoothScrollToPageAnchors(); 
     appNamespace.fadeUpCardsOnView();
-    appNamespace.enableStickyNavBar();
+    // appNamespace.enableStickyNavBar();
     
     appNamespace.renderWorks();  
-    appNamespace.enableCardOverlayOnMobile();
+    // appNamespace.enableCardOverlayOnMobile();
  
 });
 
