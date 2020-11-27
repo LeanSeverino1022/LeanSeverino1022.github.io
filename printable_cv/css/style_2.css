@@ -129,12 +129,12 @@ header {
 
 
 .banner span {
-	font-size: 16px;
+    font-size: 16px;
 }
 
 
 
-#profile_about,
+
 .main-content {
     padding: 24px 30px 56px;
 }
@@ -209,13 +209,13 @@ h3.section-title {
 }
 
 
-#profile_data {
+#profile-date {
     text-align: left;
     line-height: 1.8;
     /* border: red 2px solid; */
 }
 
-#profile_data .th {
+#profile-date .th {
     font-weight: 600;
     width: 90px;
     margin-right: 10px;
@@ -229,7 +229,7 @@ h3.section-title {
 .skills-container{
     margin-bottom: 40px;
 }
-.links_sec {margin-bottom: 60px;}
+.links-sec {margin-bottom: 60px;}
 
 /*SKILLS */
 /* ul.skills{padding:0;text-align:center;} */

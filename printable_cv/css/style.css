@@ -87,8 +87,6 @@ header {
 }
 
 
-
-#profile_about, 
 #profile_body {
     padding: 24px 30px 56px;
 }
@@ -178,12 +176,12 @@ h3.section_title {
 }
 
 
-#profile_data {
+#profile-data {
     text-align: left;
     line-height: 2;
 }
 
-#profile_data .th {
+#profile-data .th {
     font-weight: 600;
     width: 90px;
     margin-right: 10px;
@@ -197,7 +195,7 @@ h3.section_title {
 .skills_sec{    
     margin-bottom: 40px;   
 }
-.links_sec {margin-bottom: 60px;}
+.links-sec {margin-bottom: 60px;}
 
 /*SKILLS */
 ul.skills{padding:0;text-align:center;}
