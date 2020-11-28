@@ -147,7 +147,7 @@ h3.section_title {
     font-size: 13px;
 }
 
-.exp_item_body {
+.exp-item-body {
     line-height: 1.5;    
 }
 
@@ -192,7 +192,7 @@ h3.section_title {
 }
 
 .profile, 
-.skills_sec{    
+.skills-sec{    
     margin-bottom: 40px;   
 }
 .links-sec {margin-bottom: 60px;}
@@ -211,7 +211,7 @@ ul.skills{padding:0;text-align:center;}
 .skills li:nth-child(odd){background:#25AAE2;}
 
 /*border + tail effect*/
-.icon_list li {
+.icon-list li {
      border: 5px solid rgba(192,192,192,.7);
     padding: 5px;
     position:relative;
@@ -222,7 +222,7 @@ ul.skills{padding:0;text-align:center;}
     margin-bottom: 30px;
 }
 
-.icon_list li:after {
+.icon-list li:after {
     content:'';
     position: absolute;
     top: 100%;
@@ -236,21 +236,21 @@ ul.skills{padding:0;text-align:center;}
     border-right: solid 12px transparent;   
 }
 
- ol.icon_list{
+ ol.icon-list{
     padding: 0;
 }
 
-.icon_list li img{
+.icon-list li img{
     width: 100%;  
     height: 100%;
 }
 
-.icon_list li div{
+.icon-list li div{
     font-size: 82px;
 }
 
 
-.icon_list .link_name {
+.icon-list .link-name {
     position: relative;
     bottom: -15px;
 }
@@ -260,7 +260,7 @@ ul.skills{padding:0;text-align:center;}
 
 ul, ol { padding-left: 20px; }
 
-.exp_item_body,
+.exp-item-body,
 .exp_item_header{
     padding: 5px;
 }
@@ -325,8 +325,8 @@ p#endnote { text-align: center; }
     .skills li,
     .banner span,
     .banner h2,
-    .icon_list a,
-    .icon_list a:visited {
+    .icon-list a,
+    .icon-list a:visited {
          color: #000;        
     }
 
