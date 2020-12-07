@@ -6,6 +6,8 @@
     --gray: #7F7F7F;
     --lighter-gray: #827F7F;
     --red: #F27D80;
+    --name-color: #ffdf38;
+    --position-color: #c199ff;
   }
 
 
@@ -84,9 +86,11 @@ h1,h2,h3,h4,h5,h6{
 
 #wrapper {
     background: #fff;
-    min-width: 950px;
+    width: 100%;
     max-width: 1050px;
     margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* border: red 2px solid; */
 }
 
 
@@ -103,6 +107,26 @@ header {
     background-color: #494A4F;
 }
 
+.header-icon {
+    padding: 8px 5px 2px;
+    border: 1px solid #E6E5EA;
+    margin-right: 8px;
+}
+
+.header-icons li:first-child span{
+    background: #D64840;
+}
+.header-icons li:nth-child(2) span {
+    background: #fff;
+    color: #000;
+}
+.header-icons li:nth-child(3) span {
+    background: #0A66C2;
+}
+.header-icons li:last-child span{
+    background: #000;
+}
+
 .banner {
     padding: 1.5em 0;
     display: flex;
@@ -113,6 +137,11 @@ header {
     font-size: 2em;
     letter-spacing: 4px;
     font-weight: normal;
+    color: var(--name-color);
+}
+
+.banner .position {
+    color: var(--position-color);
 }
 
  .banner ul {
@@ -123,7 +152,7 @@ header {
  }
 
  .banner li {
-    margin-bottom: 10px;     
+    margin-bottom: 10px;
  }
 
  .banner li span {
@@ -149,7 +178,7 @@ header {
 }
 
 .main-col {
-    padding: 1.2em;
+    padding: 0 1.2em;
 }
 
 .main-col.left {
@@ -181,7 +210,7 @@ h3.section-title {
     color: var(--black);
     padding-bottom: 12px;
     margin-bottom: 28px;
-    border-bottom: 1px #2b170b solid;
+    /* border-top: 1px #2b170b solid; */
     font-size: 20px;
     font-weight: 500;
 }
@@ -192,7 +221,7 @@ h3.section-title {
 
 .exp-item-header {
     margin-bottom: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; todo: put to other theme*/
 }
 
 .exp-item-header .period {
@@ -240,8 +269,11 @@ h3.section-title {
 }
 
 .profile,
-.skills-container{
-    margin-bottom: 40px;
+.skills-container, 
+.educ_sec,
+.exp_sec {
+    padding: 1.4em 0 2em;
+    /* border: 1px solid red; */
 }
 .links-sec {margin-bottom: 60px;}
 
@@ -466,10 +498,8 @@ body{
     position: fixed;
     width: 100%;
     height:100vh;
-    background: #485563;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    
+background: #504b76;  
     }
 
 .circles{
