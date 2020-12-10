@@ -31,7 +31,7 @@
 
 html{
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 body {
@@ -55,7 +55,8 @@ p,ul li,ol li{
 
 h1,h2,h3,h4,h5,h6{
 	text-transform:uppercase;
-	margin:0;
+    margin:0;
+    font-size: 1rem;
 }
 
 
@@ -109,7 +110,6 @@ header {
 
 .header-icon {
     padding: 8px 5px 2px;
-    border: 1px solid #E6E5EA;
     margin-right: 8px;
 }
 
@@ -205,14 +205,14 @@ header {
 
 
 
-h3.section-title {
+.section-title {
     color: var(--red);
     color: var(--black);
     padding-bottom: 12px;
     margin-bottom: 28px;
-    /* border-top: 1px #2b170b solid; */
+    border-bottom: 1px #494a4f  solid;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .exp-item:not(:last-child) {
@@ -237,18 +237,19 @@ h3.section-title {
 .exp-item-header .position,
 .exp-item-header .company {
     letter-spacing: 1px;
+    
 }
 
 
 
 .exp-item-header .company {
-    font-size: 13px;
+    font-weight: normal;
 }
 
 
 .main-col.right h4 {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 1.1em;
+    font-weight: 700;
 }
 
 
