@@ -1,6 +1,6 @@
 /* CSS Variables */
 :root {
-    --black: #2d2d2d;
+    --black: #363636;
     --lighter-black: #40414F;
     --white: #ffffff;
     --gray: #7F7F7F;
@@ -48,7 +48,7 @@ body {
 p,ul li,ol li{
 	margin:0;
 	/* font-size:14px; */
-	letter-spacing: .5px;
+	letter-spacing: .3px;
 }
 
 /* ul li { list-style-type: none; } */
@@ -57,6 +57,7 @@ h1,h2,h3,h4,h5,h6{
 	text-transform:uppercase;
     margin:0;
     font-size: 1rem;
+    font-weight: normal;
 }
 
 
@@ -108,11 +109,15 @@ header {
     background-color: #494A4F;
 }
 
+/* HEADER ICONS */
+
 .header-icon {
     padding: 8px 5px 2px;
     margin-right: 8px;
+    border: 1px solid #e6e5ea;
+    color: #e6e5ea;
 }
-
+/*
 .header-icons li:first-child span{
     background: #D64840;
 }
@@ -125,7 +130,7 @@ header {
 }
 .header-icons li:last-child span{
     background: #000;
-}
+} */
 
 .banner {
     padding: 1.5em 0;
@@ -134,7 +139,7 @@ header {
  }
 
  .banner h1 {
-    font-size: 2em;
+    font-size: 2rem;
     letter-spacing: 4px;
     font-weight: normal;
     color: var(--name-color);
@@ -174,7 +179,7 @@ header {
 
 .main-content {
     display: flex;
-    align-items: stretch; /* stretched height of all flex children to be equal */    
+    align-items: stretch; /* stretched height of all flex children to be equal */
 }
 
 .main-col {
@@ -186,12 +191,12 @@ header {
     width: 30%;
 
     overflow:hidden;
-   
-  
+
+
 
     /* todo: move to theme */
     background: #E6E5EA;
-   
+
 
     /* theme  */
 }
@@ -202,56 +207,50 @@ header {
     padding-left: 20px;
 }
 
-
+.feather-briefcase {
+    height:24px;
+    width: 24px;
+}
 
 
 .section-title {
-    color: var(--red);
     color: var(--black);
-    padding-bottom: 12px;
+    padding-bottom: 5px;
     margin-bottom: 28px;
-    border-bottom: 1px #494a4f  solid;
-    font-size: 20px;
+    border-bottom: 1px var(--lighter-gray) solid;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
-.exp-item:not(:last-child) {
-    margin-bottom: 15px;
+.exp-item {
+    margin-bottom: 30px;
 }
 
 .exp-item-header {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     /* border: 1px solid black; todo: put to other theme*/
 }
 
 .exp-item-header .period {
     float: right;
-/*    font-size: 14px;*/
 }
 
 .exp-item-header .position {
-    font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .exp-item-header .position,
 .exp-item-header .company {
     letter-spacing: 1px;
-    
+
 }
 
 
 
-.exp-item-header .company {
-    font-weight: normal;
+.exp-item-header .company,
+.exp-item-header .period {
+    color: var(--lighter-gray);
 }
-
-
-.main-col.right h4 {
-    font-size: 1.1em;
-    font-weight: 700;
-}
-
 
 #profile-date {
     text-align: left;
@@ -260,7 +259,7 @@ header {
 }
 
 #profile-date .th {
-    font-weight: 600;
+    font-weight: 700;
     width: 90px;
     margin-right: 10px;
     text-align: right;
@@ -270,7 +269,7 @@ header {
 }
 
 .profile,
-.skills-container, 
+.skills-container,
 .educ_sec,
 .exp_sec {
     padding: 1.4em 0 2em;
@@ -353,12 +352,13 @@ header {
 
 /*additional styling*/
 
-ul, ol { padding-left: 20px; }
-
-.exp-item_body,
-.exp-item-header{
-    padding: 5px;
+ul, ol {
+     padding-left: 20px;
+     margin-left:20px;
+     margin-bottom:14px;
 }
+
+
 
 
 
@@ -478,7 +478,7 @@ body{
     width: 100%;
     position: absolute;
     top:50vh;
-    
+
 }
 
 .context h1{
@@ -490,8 +490,8 @@ body{
 
 .area{
     z-index: -1;
-    /* background: #4e54c8;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    /* background: #4e54c8;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
     width: 100%;
     height:100vh; */
     /* background-attachment: scroll; */
@@ -499,8 +499,8 @@ body{
     position: fixed;
     width: 100%;
     height:100vh;
-    
-background: #504b76;  
+
+background: #575a61;
     }
 
 .circles{
@@ -521,7 +521,7 @@ background: #504b76;
     background: rgba(255, 255, 255, 0.2);
     animation: animate 25s linear infinite;
     bottom: -150px;
-    
+
 }
 
 .circles li:nth-child(1){
