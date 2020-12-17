@@ -54,6 +54,12 @@ body {
     line-height: 1.5;
 }
 
+body {
+    margin: 0 auto;
+    background: none;
+    max-width: 1050px;
+}
+
 p,ul li,ol li{
 	margin:0;
 	letter-spacing: .3px;
