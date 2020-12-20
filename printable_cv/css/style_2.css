@@ -56,7 +56,7 @@ body {
 
 body {
     margin: 0 auto;
-    background: none;
+    /* background: none; */
     max-width: 1050px;
 }
 
@@ -413,7 +413,8 @@ p#endnote { text-align: center; }
 /*for print*/
 
 @media print {
-     #download_cv {
+
+     /* #download_cv {
          display: none;
      }
 
@@ -424,8 +425,8 @@ p#endnote { text-align: center; }
     .banner h2 {
         margin-bottom: 0;
         padding-bottom: 0;
-    }
-
+    } */
+/* 
      h3.section-title,
     .skills li,
     .banner span,
@@ -433,13 +434,13 @@ p#endnote { text-align: center; }
     .icon-list a,
     .icon-list a:visited {
          color: #000;
-    }
+    } */
 
-    .page-break {
+    /* .page-break { */
 /*        page-break-before: always;*/
-        margin-bottom: 120px;
+        /* margin-bottom: 120px; */
 
-    }
+    /* } */
  }
 
 
