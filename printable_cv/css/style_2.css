@@ -1,10 +1,10 @@
 /* TOC
-    - CSS Variables
+    - *CSS Variables
     - General styles
     - Colors
     - By Components
-
-/* 
+ */
+ 
 
 
 /* CSS Variables */
@@ -211,7 +211,7 @@ header {
     background: #E6E5EA;
 
 
-    /* theme  */
+    /** theme  **/
 }
 
 .main-col.right {
@@ -297,7 +297,7 @@ header {
     /* padding: 0; */
 }
 
-.skills li{
+.skills li {
     /* border-radius:6px;
     display:inline-block;
     background: #0D9F4A;
@@ -307,7 +307,7 @@ header {
     /* display: inline-block; */
 }
 
-/* .skills li::before {
+/* .skills li::before { 
     content: '| ';
     color: red;
     font-weight: 700;
@@ -388,21 +388,19 @@ p#endnote { text-align: center; }
 
 .educ_sec { line-height: 2;}
 
-#download_cv {
+#download-resume {
     position: fixed;
     bottom: 0;
-    right: 5px;
-    border: 1px solid #E2E1E6;
+    right: 0;
     width: 100%;
     text-align: center;
-    background: #343434;
-
+    background: #494A4F;
     max-width: 1050px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-#download_cv a {
+#download-resume a {
     color: #afb4b6;
     text-decoration: none;
     padding: 0 5%;
@@ -414,7 +412,7 @@ p#endnote { text-align: center; }
 
 @media print {
 
-     /* #download_cv {
+     /* #download-resume {
          display: none;
      }
 
@@ -464,17 +462,7 @@ p#endnote { text-align: center; }
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* bg animation */
+/*  **BG animation** */
 
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
@@ -628,3 +616,5 @@ a {
     }
 
 }
+
+/* End of animated background */
